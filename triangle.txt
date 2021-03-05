@@ -1,0 +1,25 @@
+ public static string Analyze ()
+        {
+            int firstside; 
+            int Secondside; 
+            int Thirdside;
+
+            if (firstside <= 0 || Secondside <= 0 || Thirdside <= 0)
+            {
+                return "Please enter positive values";
+            }
+            else if ((firstside + Secondside > Thirdside) && (Secondside + Thirdside > firstside) && (Thirdside + firstside > firstside)
+           {
+                if (firstside==Secondside==Thirdside){
+		return "Equilateral triangle";
+            }elseif( firstside==Secondside||Secondside==Thirdside||Thirdside==firstside)
+		{
+		return " Isosceles Triangle";
+		}
+		else
+		{
+			return " Scalene Triangle";
+		}
+		else {
+		return " The given lengths cannot form triangle";
+        }
